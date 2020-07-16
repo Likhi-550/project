@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url('img/file1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+    header{
+        font-size: 30px;
+        text-align: center;
+        color: #231709;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .card{
+        display : flex;
+        flex-wrap: wrap;
+    }
+    .details{
+        width:44%;
+        margin: 1%;
+        padding: 1%;
+        color: #622a0f;
+        border: 2px solid #1b1e23;
+        box-shadow: 5px 10px 20px #757575 inset;
+
+    }
+    p{
+        font-size: 25px;
+    }
+    @media only screen and (max-width:600px){
+        .card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .details{
+            width: 92%;
+            margin: 2%;
+            padding-left: 2%;
+            text-align: center;
+            
+        }
+        header{
+            padding: 1%;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    
+
+
+
+
+<script>
+
+let india = {
+                states: [
+                       {
+                         state :"Andhra pradesh",
+                         covidcases:35451,
+                         deathRates:452,
+                         recovered:18378,
+                        },
+                        {
+                         state:"Arunachal pradesh",
+                         covidcases:462,
+                         deathRates:3,
+                          recovered:153,
+                        },
+                        {
+                         state:"Assam",
+                         covidcases:20842,
+                         deathRates:50,
+                          recovered:"-",
+                        },
+                        {
+                         state:"Bihar",
+                         covidcases:20612,
+                         deathRates:180,
+                          recovered:13462,
+                        },
+                        {
+                         state:"Chhattisgarh",
+                         covidcases:4539,
+                         deathRates:20,
+                          recovered:3324,
+                        },
+                        {
+                         state:"Goa",
+                         covidcases:2951,
+                         deathRates:18,
+                          recovered:1674,
+                        },
+                        {
+                         state:"Gujarat",
+                         covidcases:44552,
+                         deathRates:2079,
+                          recovered:31286,
+                        },
+                        {
+                         state:"Haryana",
+                         covidcases:23306,
+                         deathRates:319,
+                          recovered:17667,
+                        },
+                        {
+                         state:"Himachal pradesh",
+                         covidcases:1341,
+                         deathRates:11,
+                          recovered:979,
+                        },
+                        {
+                         state:"Jharkhand",
+                         covidcases:4302,
+                         deathRates:38,
+                          recovered:2485,
+                        },
+                        {
+                         state:"Karnataka",
+                         covidcases: 50439,
+                         deathRates:1114,
+                          recovered:18466,
+                        },
+                        {
+                         state:"Kerala",
+                         covidcases:10898,
+                         deathRates:38,
+                          recovered:"-",
+                        },
+                        {
+                         state:"Madhya pradesh",
+                         covidcases:20381,
+                         deathRates:691,
+                          recovered:13908,
+                        },
+                        {
+                         state:"Maharashtra",
+                         covidcases:"276k",
+                         deathRates:10928,
+                          recovered:"153k",
+                        },
+                        {
+                         state:"Manipur",
+                         covidcases:1700,
+                         deathRates:0,
+                          recovered:989,
+                        },
+                        {
+                         state:"Meghalaya",
+                         covidcases:346,
+                         deathRates:2,
+                          recovered:66,
+                        },
+                        {
+                         state:"Mizoram",
+                         covidcases:238,
+                         deathRates:0,
+                          recovered:159,
+                        },
+                        {
+                         state:"Nagaland",
+                         covidcases:902,
+                         deathRates:0,
+                          recovered:348,
+                        },
+                        {
+                         state:"Odisha",
+                         covidcases:15886,
+                         deathRates:81,
+                          recovered:"-",
+                        },
+                        {
+                         state:"Punjab",
+                         covidcases:9382,
+                         deathRates:238,
+                          recovered:"-",
+                        },
+                        {
+                         state:"Rajasthan",
+                         covidcases:26437,
+                         deathRates:530,
+                          recovered:19502,
+                        },
+                        {
+                         state:"Sikkim",
+                         covidcases:220,
+                         deathRates:0,
+                          recovered:87,
+                        },
+                        {
+                         state:"Tamil Nadu",
+                         covidcases:"156k",
+                         deathRates:2234,
+                          recovered:"102k",
+                        },
+                        {
+                         state:"Telangana",
+                         covidcases:39342,
+                         deathRates:386,
+                          recovered:25999,
+                        },
+                        {
+                         state:"Tripura",
+                         covidcases:2268,
+                         deathRates:3,
+                          recovered:1604,
+                        },
+                        {
+                         state:"Uttarakhand",
+                         covidcases:3785,
+                         deathRates:50,
+                          recovered:2948,
+                        },
+                        {
+                         state:"Uttar Pradesh",
+                         covidcases:41383,
+                         deathRates:1012,
+                          recovered:25743,
+                        },
+                        {
+                         state:"West Bengal",
+                         covidcases:34427,
+                         deathRates:1000,
+                          recovered:20680,
+                        },
+                        ],
+                }
+ let std = india['states'];
+
+
+var body = document.body;
+var header = document.createElement("header");
+header.textContent = "covid-19 information in india";
+body.appendChild(header);
+
+
+
+var card = document.createElement("div");
+card.classList.add("card");
+body.append(card);
+
+for(var i = 0; i < std.length;i++){
+
+var details = document.createElement("div");
+details.classList.add("details");
+card.append(details);
+
+var title = document.createElement("p");
+var content = document.createTextNode("state : " +std[i].state);
+title.append(content);
+details.append(title);
+
+var covidcases = document.createElement("p");
+var content = document.createTextNode("covidcases : " +std[i].covidcases);
+covidcases.append(content);
+details.append(covidcases);
+
+var deathRates = document.createElement("p");
+var content = document.createTextNode("deathRates : " +std[i].deathRates);
+deathRates.append(content);
+details.append(deathRates);
+
+var recovered= document.createElement("p");
+var content= document.createTextNode("recovered:"+std[i].recovered);
+recovered.append(content);
+details.append(recovered);
+
+}
+</script>
+
+
+</body>
+</html>
