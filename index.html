@@ -73,169 +73,169 @@ let india = {
                        {
                          State :"Andhra pradesh",
                          covidcases:35451,
-                         deathRates:452,
+                         deathRate:452,
                          recovered:18378,
                         },
                         {
                          State:"Arunachal pradesh",
                          covidcases:462,
-                         deathRates:3,
+                         deathRate:3,
                           recovered:153,
                         },
                         {
                          State:"Assam",
                          covidcases:20842,
-                         deathRates:50,
+                         deathRate:50,
                           recovered: "_",
                         },
                         {
                          State:"Bihar",
                          covidcases:20612,
-                         deathRates:180,
+                         deathRate:180,
                           recovered:13462,
                         },
                         {
                          State:"Chhattisgarh",
                          covidcases:4539,
-                         deathRates:20,
+                         deathRate:20,
                           recovered:3324,
                         },
                         {
                          State:"Goa",
                          covidcases:2951,
-                         deathRates:18,
+                         deathRate:18,
                           recovered:1674,
                         },
                         {
                          State:"Gujarat",
                          covidcases:44552,
-                         deathRates:2079,
+                         deathRate:2079,
                           recovered:31286,
                         },
                         {
                          State:"Haryana",
                          covidcases:23306,
-                         deathRates:319,
+                         deathRate:319,
                           recovered:17667,
                         },
                         {
                          State:"Himachal pradesh",
                          covidcases:1341,
-                         deathRates:11,
+                         deathRate:11,
                           recovered:979,
                         },
                         {
                          State:"Jharkhand",
                          covidcases:4302,
-                         deathRates:38,
+                         deathRate:38,
                           recovered:2485,
                         },
                         {
                          State:"Karnataka",
                          covidcases: 50439,
-                         deathRates:1114,
+                         deathRate:1114,
                           recovered:18466,
                         },
                         {
                          State:"Kerala",
                          covidcases:10898,
-                         deathRates:38,
+                         deathRate:38,
                           recovered: "_",
                         },
                         {
                          State:"Madhya pradesh",
                          covidcases:20381,
-                         deathRates:691,
+                         deathRate:691,
                           recovered:13908,
                         },
                         {
                          State:"Maharashtra",
                          covidcases:"276k",
-                         deathRates:10928,
+                         deathRate:10928,
                           recovered:"153k",
                         },
                         {
                          State:"Manipur",
                          covidcases:1700,
-                         deathRates:0,
+                         deathRate:0,
                           recovered:989,
                         },
                         {
                          State:"Meghalaya",
                          covidcases:346,
-                         deathRates:2,
+                         deathRate:2,
                           recovered:66,
                         },
                         {
                          State:"Mizoram",
                          covidcases:238,
-                         deathRates:0,
+                         deathRate:0,
                           recovered:159,
                         },
                         {
                          State:"Nagaland",
                          covidcases:902,
-                         deathRates:0,
+                         deathRate:0,
                           recovered:348,
                         },
                         {
                          State:"Odisha",
                          covidcases:15886,
-                         deathRates:81,
+                         deathRate:81,
                           recovered: "_",
                         },
                         {
                          State:"Punjab",
                          covidcases:9382,
-                         deathRates:238,
+                         deathRate:238,
                           recovered: "_",
                         },
                         {
                          State:"Rajasthan",
                          covidcases:26437,
-                         deathRates:530,
+                         deathRate:530,
                           recovered:19502,
                         },
                         {
                          State:"Sikkim",
                          covidcases:220,
-                         deathRates:0,
+                         deathRate:0,
                           recovered:87,
                         },
                         {
                          State:"Tamil Nadu",
                          covidcases:"156k",
-                         deathRates:2234,
+                         deathRate:2234,
                           recovered:"102k",
                         },
                         {
                          State:"Telangana",
                          covidcases:39342,
-                         deathRates:386,
+                         deathRate:386,
                           recovered:25999,
                         },
                         {
                          State:"Tripura",
                          covidcases:2268,
-                         deathRates:3,
+                         deathRate:3,
                           recovered:1604,
                         },
                         {
                          State:"Uttarakhand",
                          covidcases:3785,
-                         deathRates:50,
+                         deathRate:50,
                           recovered:2948,
                         },
                         {
                          State:"Uttar Pradesh",
                          covidcases:41383,
-                         deathRates:1012,
+                         deathRate:1012,
                           recovered:25743,
                         },
                         {
                          State:"West Bengal",
                          covidcases:34427,
-                         deathRates:1000,
+                         deathRate:1000,
                           recovered:20680,
                         },
                         ],
@@ -270,10 +270,10 @@ var content = document.createTextNode("covidcases : " +std[i].covidcases);
 covidcases.append(content);
 details.append(covidcases);
 
-var deathRates = document.createElement("p");
-var content = document.createTextNode("deathRates : " +std[i].deathRates);
-deathRates.append(content);
-details.append(deathRates);
+var deathRate= document.createElement("p");
+var content = document.createTextNode("deathRate: " +std[i].deathRate);
+deathRate.append(content);
+details.append(deathRate);
 
 var recovered= document.createElement("p");
 var content= document.createTextNode("recovered:"+std[i].recovered);
